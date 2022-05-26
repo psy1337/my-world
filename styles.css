@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+}
+
+#world {
+  height: 100vh;
+  position: relative;
+}
+
+.world-day {
+  background-color: lightblue;
+}
+
+.world-night {
+  background-color: black;
+}
+
+.wall {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  left: 200px;
+  bottom: 100px;
+}
+
+#door {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  left: 40px;
+  bottom: 0px;
+}
+
+.door-open {
+  background-color: white;
+}
+
+.door-closed {
+  background-color: rgb(103, 48, 0);
+}
+
+#open-door {
+  height: 30px;
+  width: 8px;
+  background-color: rgb(103, 48, 0);
+  position: absolute;
+  left: 55px;
+  bottom: 0px;
+}
+
+.roof {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 60px solid brown;
+  position: absolute;
+  left: 190px;
+  bottom: 200px;
+}
+
+#window1 {
+  height: 30px;
+  width: 20px;
+
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+}
+
+#window2 {
+  height: 30px;
+  width: 20px;
+
+  position: absolute;
+  left: 70px;
+  bottom: 30px;
+}
+
+.window-day {
+  background-color: white;
+}
+
+.window-night {
+  background-color: orange;
+}
+
+.ground {
+  height: 100px;
+  width: 100%;
+  background-color: greenyellow;
+  position: absolute;
+  bottom: 0px;
+}
+
+#sun {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+  border-radius: 100px;
+  left: 100px;
+  bottom: 400px;
+}
+
+.day {
+  background-color: yellow;
+}
+
+.night {
+  background-color: white;
+}
+
+#wood {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: saddlebrown;
+  bottom: 100px;
+  left: 415px;
+}
+
+#tree-part1 {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 50px solid green;
+  position: absolute;
+  left: 380px;
+  bottom: 120px;
+}
+
+#tree-part2 {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 40px solid green;
+  position: absolute;
+  left: 390px;
+  bottom: 150px;
+}
+
+#tree-part3 {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid green;
+  position: absolute;
+  left: 400px;
+  bottom: 180px;
+}
+
+#star1 {
+  position: absolute;
+  font-size: 60px;
+  left: 440px;
+  bottom: 530px;
+}
+
+#star2 {
+  position: absolute;
+  font-size: 60px;
+  left: 310px;
+  bottom: 590px;
+}
+
+#star3 {
+  position: absolute;
+  font-size: 60px;
+  left: 390px;
+  bottom: 490px;
+}
+
+.star-day {
+  color: lightblue;
+}
+
+.star-night {
+  color: yellow;
+}
