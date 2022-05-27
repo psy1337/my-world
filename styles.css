@@ -5,6 +5,7 @@ body {
 #world {
   height: 100vh;
   position: relative;
+  background-color: lightblue;
 }
 
 .world-day {
