@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
       star2.classList.add("star-night")
       star3.classList.remove("star-day")
       star3.classList.add("star-night")
+      sun.classList.remove("sun-rise")
+      sun.classList.add("sun-fall")
       // clicking the moon
     } else if (sun.classList.contains("night")) {
       sun.classList.remove("night")
@@ -34,6 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
       star2.classList.add("star-day")
       star3.classList.remove("star-night")
       star3.classList.add("star-day")
+      sun.classList.remove("sun-fall")
+      sun.classList.add("sun-rise")
     }
   })
 
@@ -46,5 +50,17 @@ document.addEventListener("DOMContentLoaded", () => {
       door.classList.remove("door-closed")
       door.classList.add("door-open")
     }
+  })
+  const apple3 = document.querySelector("#apple3")
+  apple3.addEventListener("click", () => {
+    apple3.classList.add("apple3-fall")
+  })
+  const apple2 = document.querySelector("#apple2")
+  apple2.addEventListener("click", () => {
+    apple2.classList.add("apple2-fall")
+  })
+  const apple1 = document.querySelector("#apple1")
+  apple1.addEventListener("click", () => {
+    apple1.classList.add("apple1-fall")
   })
 })
