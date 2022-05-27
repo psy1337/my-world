@@ -57,8 +57,11 @@ body {
 }
 
 .text-bubble {
-  background-color: greenyellow;
-  width: 200px;
+  background-color: white;
+  width: 210px;
+  position: absolute;
+  bottom: 630px;
+  left: 10px;
   border-radius: 20px;
   padding: 10px;
 }
@@ -230,14 +233,62 @@ body {
 #star1 {
   position: absolute;
   font-size: 60px;
+  color: yellow;
+  transform: scale(0);
   left: 440px;
   bottom: 530px;
+}
+.animate-growing-star {
+  animation-name: growing-star;
+  animation-duration: 9000ms;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+}
+
+@keyframes growing-star {
+  0% {
+    transform: scale(0);
+  }
+
+  70% {
+    transform: scale(0);
+  }
+
+  90% {
+    transform: scale(3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-shrinking-star {
+  animation-name: shrinking-star;
+  animation-duration: 9000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shrinking-star {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(0);
+  }
 }
 
 #star2 {
   position: absolute;
   font-size: 60px;
   left: 310px;
+  color: yellow;
+  transform: scale(0);
   bottom: 590px;
 }
 
@@ -245,6 +296,8 @@ body {
   position: absolute;
   font-size: 60px;
   left: 390px;
+  color: yellow;
+  transform: scale(0);
   bottom: 490px;
 }
 
